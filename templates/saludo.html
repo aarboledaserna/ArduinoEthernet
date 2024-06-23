@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Frontend</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- saludo.html -->
+    <form action="/go_to_saludo" method="post">
+        <button type="submit">Ir a Saludo</button>
+    </form>
+
+    <!-- index.html -->
+    <form action="/go_to_index" method="post">
+        <button type="submit">Ir a Index</button>
+    </form>
+    <div>
+        <h2>Hola a todos</h2>
+    </div>
+    {{ arduino_response }}
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de led arduino</title>
+</head>
+<body>
+    <h1>control de led</h1>
+    <p>Estado de led: {{arduino_response}}</p>
+    <form action="{{url_for('encender_led')}}" method="post">
+        <button type="submit">Encender Led</button>
+    </form>
+    <form action="{{url_for('apagar_led')}}" method="post">
+        <button type="submit">Apagar led</button>
+    </form>
+    
+</body>
+</html>
